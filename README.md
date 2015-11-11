@@ -23,7 +23,8 @@ WP-PNEclubはWordPress内に、ログインボックスを表示し、PNE.club�
 ## インストール
 
 * WP-Membersプラグインのインストール https://ja.wordpress.org/plugins/wp-members/
-* WP-PNEclubプラグインのインストール ベータ中につき非公開
+* WP-PNEclubプラグインのインストール https://github.com/tejima/WP-PNEclub
+ * wp-content/plugins にpneclub.phpを置き、WordPress管理画面からプラグインを有効にする
 
 ## WP-PNEclub設定
 
@@ -80,5 +81,6 @@ WP-Members設定＝＞ダイアログ
 クラブの運営スタイルに合わせて適宜変更する。
 
 参考設定値
-* http://p.pne.jp/d/201511111446.png
-* http://p.pne.jp/d/201511111447.png
+
+<img src="http://p.pne.jp/d/201511111446.png">
+<img src="http://p.pne.jp/d/201511111447.png">
