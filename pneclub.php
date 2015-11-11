@@ -45,7 +45,6 @@ function function_pnelogin()
     }
 
     switch ($contents['result']) {
-        case 200:
         case '200':
             $creds = array();
             $creds['user_login'] = get_option('pneclub_readerlogin');
@@ -67,18 +66,20 @@ function function_pnelogin()
     $wordpresshost = get_option('pneclub_wordpresshost');
     $servicename = get_option('pneclub_servicename');
     $refreshtime = get_option('pneclub_refreshtime');
+    $referer =  $_SERVER["HTTP_REFERER"];
 
     if ($state == 'SUCCESS') {
         $result = <<<EOF
 <HTML>
 <HEAD>
-<META http-equiv="refresh" content="{$refreshtime}; url={$wordpresshost}">
+<META http-equiv="refresh" content="{$refreshtime}; url={$referer}">
 <TITLE></TITLE>
 </HEAD>
 <BODY bgcolor="#ffffff">
 ログインしました。
+
 {$refreshtime}秒で自動的にサイトが移動しない場合は、こちらをクリックして進んでください。
-<a href="{$wordpresshost}">{$servicename}</a>
+<a href="{$referer}">{$servicename}</a>
 
 </BODY>
 </HTML>
@@ -87,12 +88,12 @@ EOF;
         $result = <<<EOF
 <HTML>
 <HEAD>
-<META http-equiv="refresh" content="{$refreshtime}; url={$wordpresshost}">
+<META http-equiv="refresh" content="{$refreshtime}; url={$referer}">
 <TITLE></TITLE>
 </HEAD>
 <BODY bgcolor="#ffffff">
 ログインに失敗しました。
-<a href="{$wordpresshost}">{$servicename}</a>
+<a href="{$referer}">{$servicename}</a>
 
 </BODY>
 </HTML>
