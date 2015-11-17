@@ -21,7 +21,7 @@ WP-PNEclubは、PNE.clubの集金アカウント情報を元に、
 ## 事前準備
 
 * WP-Membersプラグインが動作するバージョンのWordPressのインストール
-* PNE.club (http://pne.club)でのクラブ加盟
+* PNE.club ( http://pne.club )でのクラブ加盟
 * 自社のクラブIDの取得（PNE.club管理画面=>表示設定）
 * （オプション）コースIDの取得（PNE.club管理画面=>コース設定）
 * WordPress内に、プレミアム読者としてログインさせるユーザーの追加
