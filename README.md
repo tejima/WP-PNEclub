@@ -38,12 +38,6 @@ WP-PNEclubは、PNE.clubの集金アカウント情報を元に、
 * pneclub.php内の設定値を以下を参考にして変更する
 
 ```
-add_option('pneclub_wordpresshost', 'http://blog.s1.cqc.jp/', null, 'yes');
-※WordPressサイトのURL
-
-add_option('pneclub_servicename', 'プレミアムプレス', null, 'yes');
-※WordPressサイトの名称
-
 add_option('pneclub_clubid', 'yx4ugVP6HA', null, 'yes');
 ※PNE.clubで加盟したクラブID
 
