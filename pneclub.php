@@ -10,8 +10,6 @@ Author URI: http://twitter.com/tejima
 License: Apache2.0
 */
 
-add_option('pneclub_wordpresshost', 'http://blog.s1.cqc.jp/', null, 'yes');
-add_option('pneclub_servicename', 'プレミアムプレス', null, 'yes');
 add_option('pneclub_clubid', 'yx4ugVP6HA', null, 'yes');
 add_option('pneclub_targetcourse', 'ANY', null, 'yes');
 add_option('pneclub_readerlogin', 'reader', null, 'yes');
@@ -63,8 +61,8 @@ function function_pnelogin()
             break;
     }
 
-    $wordpresshost = get_option('pneclub_wordpresshost');
-    $servicename = get_option('pneclub_servicename');
+    $wordpresshost = home_url();
+    $servicename = bloginfo( 'name' );
     $refreshtime = get_option('pneclub_refreshtime');
     $referer =  $_SERVER["HTTP_REFERER"];
 
