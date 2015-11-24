@@ -64,7 +64,7 @@ WP-Members設定＝＞ダイアログ
 ```
 オンラインサービスをご利用いただくには会員認証が必要です。
 
-<form action="/wp-admin/admin-post.php" method="post">
+<form action="(絶対パスをここにかく)/wp-admin/admin-post.php" method="post">
 <label>e-mail</label>
 <input type="hidden" name="action" value="pnelogin">
 <input type="email" name="email"><br>
